@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.topo {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(25, 113, 228, 0.514);
+  color: white;
+  z-index: 100;
+}
+
+.logo {
+  font-family: 'Pattaya', cursive;
+  font-size: 1.8rem;
+}
+
+.topo ul {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+}
+
+.topo ul li a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.topo ul li a:hover {
+  color: #f8b42d;
+}
+
+.fundo {
+  height: 100vh;
+  background: url('https://rowingtheworld.com/wp-content/uploads/2022/11/AustrianLakes-620x413-1.png') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 80px;
+  color: white;
+  text-align: center;
+}
+
+.textoFundo {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.fundoBarrinha {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(25, 113, 228, 0.514);
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.barrinha {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(238, 235, 235);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  max-width: 900px;
+  width: 90%;
+  margin-top: auto;
+  margin-bottom: 0px;
+}
+
+
+.barrinha .campo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 150px;
+  text-align: left;  
+  padding-left: 4px;
+}
+
+.barrinha label {
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.barrinha input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.barrinha button {
+  background-color: #f4a300;
+  color: white;
+  padding: 12px 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.barrinha button:hover {
+  background-color: #747dff;
+}
+
+
+.passeios-destinos {
+  max-width: 1100px;
+  margin: 60px auto;
+  display: flex;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.passeios-destinos .conteudo {
+  flex: 1;
+  min-width: 300px;
+}
+
+.passeios-destinos h3 {
+  font-family: 'Pattaya', cursive;
+  color: #5d5dfc;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.passeios-destinos .linha {
+  width: 280px;
+  height: 4px;
+  background-color: #f4a300;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.passeios-destinos p {
+  color: #333;
+  margin-bottom: 25px;
+  text-align: justify;
+  font-size: 0.95rem;
+}
+
+.botaoDEsaiba-mais {
+  background-color: #f4a300;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botaoDEsaiba-mais:hover {
+  background-color: #d18a00;
+}
+
+.passeios-destinos .galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  flex: 1;
+  min-width: 400px;
+}
+
+.passeios-destinos .galeria .foto {
+  aspect-ratio: 1/1;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.passeios-destinos .galeria .foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.hero .btn {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 12px 40px;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.destinos {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background: linear-gradient(to right, #fddde6, #c39bd3);;
+}
+
+.destinos h2 {
+  font-family: 'Pattaya', cursive;
+  font-size: 1.8rem;
+  color: #5d5dfc;
+  margin-bottom: 40px;
+}
+
+.grade-destinos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card .info {
+  padding: 20px;
+  text-align: left;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.card .preco {
+  font-weight: bold;
+  color: #333;
+}
+
+.card .preco span {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.card button {
+  margin-top: 10px;
+  background-color: #f4a300;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #747dff;
+}
+
+.avaliacoes {
+  padding-top: 100px;
+  padding-bottom: 120px;;
+  text-align: center;
+  background-color: #fff;
+}
+
+.avaliacoes h2 {
+ font-family: 'Pattaya', cursive;
+  color: #5d5dfc;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.avaliacaoCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.avaliacao {
+  max-width: 600px;
+}
+
+.avaliacao .critica {
+  font-style: italic;
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.avaliacao .foto {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f4a300;
+  margin-bottom: 10px;
+}
+
+.avaliacao .nome {
+  font-style: italic;
+  color: #333;
+}
+
+.botaoNav {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.botaoNav:hover {
+  color: #6b4ccf;
+}
+
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #2f3e4d;
+  color: #959da5;
+  padding: 40px 60px;
+  gap: 40px;
+}
+
+.rodape .coluna {
+  flex: 1;
+  min-width: 250px;
+}
+
+.rodape .logo {
+  font-family: 'Pattaya', cursive;
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.rodape h4 {
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+.rodape ul {
+  list-style: none;
+  padding: 0;
+}
+
+.rodape ul li {
+  margin-bottom: 6px;
+}
+
+.rodape a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.rodape a:hover {
+  color: #747dff; 
+}
+
+.rodape input[type="email"] {
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 10px;
+  width: 70%;
+  max-width: 250px;
+}
+
+.rodape button {
+  background-color: #f4a300;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rodape button:hover {
+  background-color: #747dff;
+}
+
+.rodape .redes {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+.rodape .redes a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  color: #ccc;
+  background-color: transparent;
+  font-size: 1.2rem;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.rodape .redes a:hover {
+  color: #f4a300; 
+}
+
